@@ -41,11 +41,15 @@ echo json_encode($usuarios);
 //echo $aluno;
 
 //Fazendo update
+//$usuario = new Usuario();
+//$usuario->loadbyId(7);
+//$usuario->update("professor","%4566s#");
+//echo $usuario;
+
+//Excluindo um usuario
 $usuario = new Usuario();
-
 $usuario->loadbyId(7);
-$usuario->update("professor","%4566s#");
-
+$usuario->delete();
 echo $usuario;
 
 ?>
