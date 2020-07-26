@@ -24,8 +24,27 @@ echo json_encode($usuarios);
 //echo json_encode($search);
 
 // Carrega um usuario usuando o login e a senha
+//$usuario = new Usuario();
+//$usuario->login("root","#@!$");
+//echo $usuario;
+
+// inserindo um usuario na base
+//$aluno = new Usuario();
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@lnu0");
+//$aluno->insert();
+//echo $aluno;
+
+//Ou criar metodo construct
+//$aluno = new Usuario("aluno1","@xxxx1");
+//$aluno->insert();
+//echo $aluno;
+
+//Fazendo update
 $usuario = new Usuario();
-$usuario->login("root","#@!$");
+
+$usuario->loadbyId(7);
+$usuario->update("professor","%4566s#");
 
 echo $usuario;
 
